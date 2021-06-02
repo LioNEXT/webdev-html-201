@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML 201 PROJECT</title>
+    <link rel="shortcut icon" href="images/wagtail_favicon.jpg" type="image/jpg" sizes="32x32">
+</head>
+<body>
+    <style>
+        .layoutcolor-banner {
+            padding: 0px;
+            color: rgba(5, 3, 122, 0.911);
+            background-color: orange;
+            /* border-style: solid; */
+            /* border-color:orange; */
+        }
+        .layoutcolor-sub-banner {
+            /* color:navy;
+            background-color:olive; */
+            text-align:left;
+            background-image: linear-gradient(orange, white);
+        }
+        .layoutcolor-footer {
+            padding: 7px;
+            font-size: 14px;
+            /* width: 100%; */
+            /* table-layout:fixed; */
+            background-image: linear-gradient(white, orange);
+        }
+        .layoutcolor-navi {
+            padding: 10px;
+            color: indigo;
+            background-color:mintcream;
+            text-align: left;
+            vertical-align:baseline;
+        }
+        .fontSize1 {
+            font-weight: bold;
+            font-size-adjust: 1;
+        }
+        .fontCursive {
+            font-family: cursive;
+        }
+        .table-species {
+            padding: 10px
+        }
+        .table-species-header {
+            /* background-color:cornflowerblue; */
+            background-image: linear-gradient(orange, white)
+        }
+        .table-species-row1 {
+            background-color:rgba(32, 178, 171, 0.05);
+        }
+        .table-species-row2 {
+            background-color:rgba(235, 237, 100, 0.05);
+        }
+        .list-references {
+            font-size:small
+        }
+        /* .alert-background {
+            background-image: linear-gradient(orange, white);
+        } */
+    </style>
+    <table  border="0" width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+            <!-- Row covers the top banner, divided into 3 cells: image in 1st, text in 2nd; 3rd empty. -->
+            <th width="20%" class="layoutcolor-banner">
+                <img
+                    src="Images/Grey-Wagtail.png"
+                    width="200"
+                    alt="Oops Wagtail flew away...">
+            </th>
+            <th width="65%" class="layoutcolor-banner">
+                <h3>Welcome to my HTML201 project</h3>
+                <h1 class="fontSize1 fontCursive">Wagtails</h1>
+            </th>
+            <td width="15%" class="layoutcolor-banner">
+                <img
+                    src="Images/white-wagtailing.gif"
+                    width="150"
+                    alt="Oops Wagtail flew away..."
+                >  
+            </td>
+        </tr>
+        <tr class="layoutcolor-sub-banner">
+            <!-- Row covers sub-banner for navigation and content tags; and for scrolling to end of page. -->
+            <td width="20%">
+                <h2 style="margin-left: 5px;">Navigation</h2>
+            </td>
+            <td width="65%" style="text-align:left">
+                <h2 style="margin-left: 5px;">Contents</h2>
+            </td>
+            <td width="15%" style="position:fixed; text-align:right;">
+                <div id="top">
+                    <a href="#bottom">
+                        <img
+                        src="Images/scroll_down.png"
+                        width="15%"
+                        position="bottom"
+                        >
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img
+                        src="Images/scroll_up_2.png"
+                        width="15%"
+                        position="bottom"
+                        >
+                    </a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <!-- Row covers navigation tool box on left and content box on right. -->
+            <td width="20%" class="layoutcolor-navi">
+                <div>
+                    <a href="#Taxonomy">Taxonomy</a>
+                    <br><br>
+                </div>
+                <div>
+                    <a href="#Characteristics">Characteristics</a>
+                    <br><br>
+                </div>
+                <div>
+                    <a href="#Species_list">Species List</a>
+                    <br><br>
+                </div>
+                <div>
+                    <a href="#Sources">Sources</a> 
+                    <br><br>
+                </div>
+                <div>
+                    <a href="#Videos">Videos</a>
+                    <br><br>
+                </div>
+                <div>
+                    <a href="#References">References</a>
+                    <br><br>
+                </div>
+                <div>
+                    <a href="https://en.wikipedia.org/wiki/Wagtail" target="_blank">Wikipedia</a>
+                    <br><br>
+                </div>
+                <div>
+                    <a href="https://www.macaulaylibrary.org" target="_blank">Cornell Lab</a>
+                    <br><br>
+                </div>
+                <div>
+                    <a href="subscribe.html">Subscribe</a>
+                    <br><br>
+                </div>
+                <div>
+                    <a href="https://wagtail.io" target="_blank">Wagtail - CMS</a>
+                    <br><br>
+                </div>
+            </td>
+            <td colspan="2" style="padding-left: 10px;">
+                <p>
+                    The <b>wagtail</b> is a genus, <i>Motacilla</i>, of passerine birds in the family Motacillidae. The forest wagtail belongs to the monotypic genus Dendronanthus which is closely related to Motacilla and sometimes included therein. The common name and genus names are derived from their characteristic tail pumping behaviour. Together with the pipits and longclaws they form the family Motacillidae.
+                </p>
+                <p>
+                    The willie wagtail (<i>Rhipidura leucophrys</i>) of Australia is an unrelated bird similar in coloration and shape to the Japanese wagtail. It belongs to the fantails.
+                </p>
+                <div id="Taxonomy">
+                    <h3 style="margin-top: 5px";>Taxonomy</h3>
+                    <p>
+                        The genus <i>Motacilla</i> was introduced by the Swedish naturalist Carl Linnaeus in 1758 in the tenth edition of his <i>Systema Naturae</i>.<sup><a href="#ref1">[1]</a></sup> The type species is the white wagtail.<sup><a href="#ref2">[2]</a></sup> <i>Motacilla</i> is the Latin name for the pied wagtail; although actually a diminutive of motare, "to move about", from medieval times it led to the misunderstanding of <i>cilla</i> as "tail".<sup><a href="#ref3">[3]</a></sup>
+                        <br>
+                        <br>
+                        At first glance, the wagtails appear to be divided into a yellow-bellied group and a white-bellied one, or one where the upper head is black and another where it is usually grey, but may be olive, yellow, or other colours. However, these are not evolutionary lineages; change of belly colour and increase of melanin have occurred independently several times in the wagtails, and the colour patterns which actually indicate relationships are more subtle.
+                        <br>
+                        <br>
+                        mtDNA cytochrome b and NADH dehydrogenase subunit 2 sequence data (Voelker, 2002) is of limited use: the suspicion that there is a superspecies of probably 3 white-bellied, black-throated wagtails is confirmed. Also, there is another superspecies in sub-Saharan Africa, three white-throated species with a black breast-band. The remaining five species are highly variable morphologically and their relationships with each other and with the two clades have not yet been satisfactorily explained.
+                        <br>
+                        <br>
+                        The origin of the genus appears to be in the general area of Eastern Siberia/Mongolia. Wagtails spread rapidly across Eurasia and dispersed to Africa in the Zanclean (Early Pliocene)<sup><a href="#ref4">[4]</a></sup> where the sub-Saharan lineage was later isolated. The African pied wagtail (and possibly the Mekong wagtail) diverged prior to the massive radiation of the white-bellied black-throated and most yellow-bellied forms, all of which took place during the late Piacenzian (early Late Pliocene), c. 3 mya.
+                        <br>
+                        <br>
+                        Three species are poly- or paraphyletic in the present taxonomical arrangement and either subspecies need to be reassigned and/or species split up. The blue-headed wagtail (AKA yellow wagtail and many other names), especially, has always been a taxonomical nightmare with over a dozen currently accepted subspecies and many more invalid ones. The two remaining "monochrome" species, Mekong and African pied wagtail may be closely related, or a most striking example of convergent evolution.[citation needed]
+                        <br>
+                        <br>
+                        Prehistoric wagtails known from fossils are <i>Motacilla humata</i> and <i>Motacilla major</i>. 
+                        
+                    </p>
+                </div>
+                <div id="Characteristics">  
+                    <h3>Characteristics</h3>
+                    <p>
+                        Wagtails are slender, often colorful, ground-feeding insectivores of open country in the Old World. Species of wagtail breed in Africa, Europe and Asia, some of which are fully or partially migratory. Two species also breed in Alaska, and wintering birds may reach Australia.
+                        <br>
+                        <br>
+                        They are ground nesters, laying up to six speckled eggs at a time.[citation needed] Among their most conspicuous behaviours is a near constant tail wagging, a trait that has given the birds their common name. In spite of the ubiquity of the behaviour and observations of it, the reasons for it are poorly understood. It has been suggested that it may flush up prey, or that it may signal submissiveness to other wagtails. Recent studies have suggested instead that it is a signal of vigilance<sup><a href="#ref5">[5]</a></sup> that may aid to deter potential predators.<sup><a href="#ref6">[6]</a></sup>
+                    </p>
+
+                </div>
+                <div id="Species_list">
+                    <h3>Species List</h3>
+                    <table border="1" width="100%" cellpadding="0" cellspacing="0">
+                        <tr class="table-species-header">
+                            <td width="25%" class="table-species">Image</td>
+                            <td width="20%" class="table-species">Scientific Name</td>
+                            <td width="15%" class="table-species">Common Name</td>
+                            <td width="5%" class="table-species">
+                                4 Letter Code<sup>*,<a href="#ref7">[7]</a></sup>
+                            </td>
+                            <td width="5%" class="table-species">
+                                6 Letter Code<sup>*,<a href="#ref7">[7]</a></sup>
+                            </td>
+                            <td width="30%" class="table-species">Distribution</td>
+                        </tr>
+                        <tr class="table-species-row1">
+                            <td>
+                                <img src="Images/Motacilla_flava.jpg"
+                                width="100%"
+                                alt="Wags flew away">
+                            </td>
+                            <td class="table-species">
+                                <i>Motacilla flava</i>
+                            </td>
+                            <td class="table-species">
+                                Western yellow wagtail
+                            </td>
+                            <td class="table-species">
+                                WYWA
+                            </td>
+                            <td class="table-species">
+                                MOTFLA
+                            </td>
+                            <td class="table-species">
+                                Temperate Europe and Asia.
+                            </td>
+                        </tr>
+                        <tr class="table-species-row2">
+                            <td>
+                                <img src="Images/Motacilla_tschutschensis.jpg"
+                                width="100%"
+                                alt="Wags flew away">
+                            </td>
+                            <td class="table-species">
+                                <i>Motacilla tschutschensis</i>
+                            </td>
+                            <td class="table-species">
+                                Eastern yellow wagtail
+                            </td>
+                            <td class="table-species">
+                                EYWA
+                            </td>
+                            <td class="table-species">
+                                MOTTSC
+                            </td>
+                            <td class="table-species">
+                                North America in Alaska, Asia and Australia. 
+                            </td>
+                        </tr>
+                        <tr class="table-species-row1">
+                            <td>
+                                <img src="Images/Motacilla_citreola.jpg"
+                                width="100%"
+                                alt="Wags flew away">
+                            </td>
+                            <td class="table-species">
+                                <i>Motacilla citreola</i>
+                            </td>
+                            <td class="table-species">
+                                Citrine wagtail
+                            </td>
+                            <td class="table-species">
+                                CIWA
+                            </td>
+                            <td class="table-species">
+                                MOTCIT
+                            </td>
+                            <td class="table-species">
+                                South Asia  
+                            </td>
+                        </tr>
+                        <tr class="table-species-row2">
+                            <td>
+                                <img src="Images/Motacilla_capensis.jpg"
+                                width="100%"
+                                alt="Wags flew away">
+                            </td>
+                            <td class="table-species">
+                                <i>Motacilla capensis</i>
+                            </td>
+                            <td class="table-species">
+                                Cape wagtail
+                            </td>
+                            <td class="table-species">
+                                CAWA
+                            </td>
+                            <td class="table-species">
+                                MOTCAP
+                            </td>
+                            <td class="table-species">
+                                Southern Africa from Uganda, the eastern DRCongo and Kenya, through Zambia and Angola to southern Africa, south to the Western Cape and the Cape of Good Hope.   
+                            </td>
+                        </tr>
+                        <tr class="table-species-row1">
+                            <td>
+                                <img src="Images/Motacilla_flaviventris.jpg"
+                                width="100%"
+                                alt="Wags flew away">
+                            </td>
+                            <td class="table-species">
+                                <i>Motacilla flaviventris</i>
+                            </td>
+                            <td class="table-species">
+                                Madagascan wagtail
+                            </td>
+                            <td class="table-species">
+                                MAWA
+                            </td>
+                            <td class="table-species">
+                                MOTFLV
+                            </td>
+                            <td class="table-species">
+                                Madagascar.   
+                            </td>
+                        </tr>
+                        <tr class="table-species-row2">
+                            <td>
+                                <img src="Images/dog_wagtail-3.gif"
+                                width="100%"
+                                alt="Looks who's a good boi">
+                            </td>
+                            <td class="table-species">
+                                <i>Chewtoy wagtail</i>
+                            </td>
+                            <td class="table-species">
+                                Toby birdchazer
+                            </td>
+                            <td class="table-species">
+                                TOBI
+                            </td>
+                            <td class="table-species">
+                                CHEWAG
+                            </td>
+                            <td class="table-species">
+                                Wherever my human is...   
+                            </td>
+                        </tr>
+                    </table>
+                    <span><sup>*</sup>&nbsp;4-letter codes are based on common names; 6-letter codes are based on scientific names. See ref <a href="#ref7">[7]</a></span>
+                </div>
+                <div id="Sources">
+                    <h3>Sources</h3>
+                    <ul>
+                        <li>
+                            Voelker, Gary (2002): Systematics and historical biogeography of wagtails: Dispersal versus vicariance revisited. <i>Condor</i> <b>104</b>(4): 725–739. [English with Spanish abstract] DOI: 10.1650/0010-5422(2002)104[0725:SAHBOW]2.0.CO;2 
+                            <a href="https://bioone.org/journals/the-condor/volume-104/issue-4/0010-5422(2002)104[0725:SAHBOW]2.0.CO;2/SYSTEMATICS-AND-HISTORICAL-BIOGEOGRAPHY-OF-WAGTAILS--DISPERSAL-VERSUS-VICARIANCE/10.1650/0010-5422(2002)104[0725:SAHBOW]2.0.CO;2.short" target="_blank">HTML abstract</a>
+                        </li>
+                    </ul>   
+                </div>
+                <div id="Videos">
+                    <h3>Videos</h3>
+                    <p>
+                        <h5>Western Yellow Wagtail</h5>
+                        A male preening and shaking the plumage after having taken a bath, then going to a rock and fluffing off the plumage. Elevation: 97 m. Date added to IBC: October 5, 2019.
+                        <br>
+                        <iframe width="1200" height="500" src="https://macaulaylibrary.org/asset/201592501/embed/800" frameborder="0" allowfullscreen style="width:800px;"></iframe>
+                    </p>
+                </div>
+                <div id="References">
+                    <h3>References</h3>
+                    <ol style="line-height: 25px;">
+                        <li id="ref1"> 
+                            Linnaeus, Carl (1758). Systema Naturae per regna tria naturae, secundum classes, ordines, genera, species, cum characteribus, differentiis, synonymis, locis (in Latin). Volume 1 (10th ed.). Holmiae:Laurentii Salvii. p. 184. 
+                            <a href="https://www.biodiversitylibrary.org/page/727091#page/203/mode/1up" target="_blank">
+                                <img src="Images/hyperlink-arrow.png" width="18px">
+                            </a>
+                        </li>
+                        <li id="ref2"> 
+                            Mayr, Ernst; Greenway, James C. Jr, eds. (1960). Check-list of Birds of the World. Volume 9. Cambridge, Massachusetts: Museum of Comparative Zoology. p. 130.
+                            <a href="https://www.biodiversitylibrary.org/page/14480805#page/146/mode/1up" target="_blank">
+                                <img src="Images/hyperlink-arrow.png" width="18px">
+                            </a>
+                        </li>
+                        <li id="ref3"> 
+                            Jobling, James A. (2010). The Helm Dictionary of Scientific Bird Names. London: Christopher Helm. p. 261. ISBN 978-1-4081-2501-4.<a href="https://archive.org/details/Helm_Dictionary_of_Scientific_Bird_Names_by_James_A._Jobling/page/n261/mode/2up" target="_blank">
+                                <img src="Images/hyperlink-arrow.png" width="18px">
+                            </a>
+                        </li>
+                        <li id="ref4">
+                            The date of 4.5 mya in Voelker (2002; see Sources) is dubious as it does not rely upon hard data but is merely an estimate based on average values now known to be often wrong.
+                        </li>
+                        <li id="ref5"> 
+                            Randler, C (2006). "Is tail wagging in white wagtails, Motacilla alba, an honest signal of vigilance?" <i>Animal Behaviour</i> <b>71</b> (5): 1089-1093
+                        </li>
+                        <li id="ref6"> 
+                            Hasson, O. (1991). "Pursuit-deterrent signals: communication between prey and predator". <i>Trends in Ecology & Evolution</i>, <b>6</b>:325-329.
+                        </li>
+                        <li id="ref7">
+                            <a href="https://www.audubonspokane.org/bird-codes" target="_blank">https://www.audubonspokane.org/bird-codes <img src="Images/hyperlink-arrow.png" width="18px"></a>
+                        </li>
+                    </ol>
+                </div>    
+            </td>
+        </tr>
+        <tr>
+            <td width="20%" class="layoutcolor-footer">
+                <div>
+                    Wagtails-Blog &copy; 2021
+                </div>
+            </td>
+            <td id="bottom" colspan="2" style="text-align: right; position:sticky;" class="layoutcolor-footer">
+                <a href="subscribe.html">Subscribe</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#bottom" onclick="alert('We will not give out or sell your email address to any other parties. Scout`s Honor! We take the trust that you have placed in us with your email address seriously. We are committed to ensuring that any e-mail addresses you send us are kept secure. If you request some information from this site via e-mail, your address will only be used to return that requested information to you.')">Privacy Policy</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#bottom" onclick="alert('I decided to learn Wagtail programming while watching Wagtails in my backyard and the adjoining park. I would love to hear from you if you have any thoughts, feedback or suggestions, or wish to get involved in bird-watching or python/django/wagtail programming in some way yourself. You can reach me at enquiries AT wagtail.netlify.app')">About me</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Subscribe to Wagtails</title>
+</head>
+<body>
+    <h3>Subscribe to Wagtails mailing list</h3>
+    <p>
+        We regularly update our content on Wagtails distribution patterns, homing habits, maps, bird songs, new research findings, WagtailFinder, and many other exciting content. If you would like to receive our newsletter, please subscribe to our mailing list. We do not spam and will only contact you as per the frequency you set here.
+    </p>
+    <form method="get" action="index.html">  
+        <!-- 
+        Set the input element to type attribute that can take dozens of parameters like emails, passwords, dates, times, text, search, etc. A placeholder parameter can provide a suggestive input. A value parameter can provide a default name or value.
+        -->
+        <div>
+            <p>Name</p>
+            <input required name="name" type="Name" value="" placeholder="John Doe">
+        </div>
+        <div>
+            <p>Email</p>
+            <input required name="email" type="email" value="" placeholder="jappleseed@example.com">
+        </div>
+        <div>
+            <p>How often should we email?</p>
+            <select name="frequency" id="">
+                <option value="" disabled="disabled">-Never-</option>
+                <option value="daily">Daily</option>
+                <option value="default-is-selected" selected="selected">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Once a year</option>
+            </select>
+        </div>
+        <div>
+            <p>Can we add your name to our sister website on Wagtail Programming?</p>
+            <select name="wagtail" id="">
+                <option value="default-is-selected" selected="selected">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div>
+            <p></p>
+            <button type="reset">Reset</button>
+            <button type="submit" onclick="alert('Thank you for subscribing to our mailing list.')">Submit this form</button>
+            <!-- <a href="index.html" onclick="alert('Thank you for subscribing to our mailing list.')"></a> -->
+        </div>
+    </form>
+</body>
+</html>
